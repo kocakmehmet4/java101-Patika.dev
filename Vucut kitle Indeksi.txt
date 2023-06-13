@@ -1,19 +1,17 @@
-import  java.util.Scanner;	
+import java.util.Scanner;	
 
 public class Main{
 	public static void main(String[] args){
 		double boy,kilo;
 		Scanner input1 = new Scanner(System.in);
 		System.out.print("Lutfen Boyunuzu (metre cinsinden) giriniz:");
-		boy=input1.nextInt();
+		boy=input1.nextDouble();
 
 		Scanner input2 = new Scanner(System.in);
 		System.out.print("Lutfen Kilonuzu giriniz:");
-		kilo=input2.nextInt();
-		
-		System.out.print("Vucut kitle indeksi :"+ kilo/boy*boy);
+		kilo=input2.nextDouble();
+		System.out.print("Vucut kitle indeksi :"+ kilo/(boy*boy));
 
 	}
-
 
 }

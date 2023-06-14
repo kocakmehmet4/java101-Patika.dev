@@ -8,19 +8,19 @@ public class Main{
 	Scanner input = new Scanner(System.in);
 	
 	System.out.print("Armut Kac Kilo ? :");
-	sonuc=input.nextInt();
+	sonuc=input.nextDouble();
 	armut*=sonuc;
 
 	System.out.print("Elma Kac Kilo ? :");
-	sonuc=input.nextInt();
+	sonuc=input.nextDouble();
 	elma*=sonuc;
 
 	System.out.print("Domates Kac Kilo ? :");
-	sonuc=input.nextInt();
+	sonuc=input.nextDouble();
 	domates*=sonuc;
 	
 	System.out.print("Muz Kac Kilo ? :");
-	sonuc=input.nextInt();
+	sonuc=input.nextDouble();
 	muz*=sonuc;
 
 	System.out.print("Patlican Kac Kilo ? :");

@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Main{
+
+	public static void main(String [] args){
+		Scanner input= new Scanner(System.in);
+		int yas;
+		String [] Zodiyag={"Maymun","Horoz","Kopek","Domuz","Fare","Okuz","Kaplan","Tavsan","Ejderha","Yilan","At","Koyun"};
+		System.out.print("Dogum yilinizi giriniz :");
+		yas=input.nextInt();
+		for(int i=0;i<12;i++){
+			if(yas%12==i){
+				System.out.print("Cin Zodyagi Burcunuz :"+ Zodiyag[i]);
+			}
+		}
+
+	}
+
+}

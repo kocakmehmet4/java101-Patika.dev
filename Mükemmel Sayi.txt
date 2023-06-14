@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Main{
+
+	public static void main(String [] args){
+
+		Scanner input= new Scanner(System.in);
+
+		int num,toplam=0;
+		
+		System.out.print("Bir sayi giriniz: ");
+		num=input.nextInt();
+
+		for(int i=1;i<num;i++){
+			if(num%i==0){
+				toplam+=i;
+			}
+		}
+		if(toplam==num){
+			System.out.println(num+ " sayisi mukemmel sayidir. ");
+		}
+		else{
+			System.out.println(num+ " sayisi mukemmel sayi degildir. ");
+		}
+
+
+
+
+	}
+}

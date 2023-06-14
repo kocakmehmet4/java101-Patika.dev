@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+
+public class Main{
+
+	public static void main(String [] args){
+
+		Scanner input = new Scanner(System.in);
+
+		int num,temp,max=0,min=0,result=0;
+		System.out.print("Kac tane sayi gireceksiniz: ");
+		num=input.nextInt();
+		while(num>result){
+			System.out.print((result+1)+". sayiyi giriniz: ");
+			temp=input.nextInt();
+			if(temp>max) { max=temp;}
+			if(temp<min) {min=temp;	}
+			result++;
+		}
+		System.out.println("En buyuk sayi: "+max);
+		System.out.println("En kucuk sayi: "+min);
+
+
+
+	}
+
+
+}

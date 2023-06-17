@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+class PowRecursive{
+    public static void main(String [] args){
+        Scanner input= new Scanner(System.in);
+        System.out.print("Please enter the base value: ");
+        int base=input.nextInt();
+        System.out.print("Please enter the exponent value: ");
+        int exp=input.nextInt();
+        System.out.print("Answer: "+ Power(base,exp));
+    }
+    public static int Power(int base,int exp){
+        int ans=1;
+        if(exp!=0){
+            ans= base* Power(base,exp-1); 
+        }
+        return ans;
+    }
+}

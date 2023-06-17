@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class invertedTriangle{
+    public static void main(String [] args){
+
+        boolean asalMi;
+        
+        for(int i=2;i<=100;i++){
+            asalMi=false;
+            for(int j=2;i>j;j++){
+                if(i%j==0){
+                   asalMi=true;
+                   break;
+                }
+            }
+            if(asalMi==false){
+                 System.out.print(i+" ");
+            }
+        }
+    }
+}

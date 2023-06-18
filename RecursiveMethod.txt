@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+class RecursiveMethod{
+    
+    public static void main(String [] args){
+        Method(15);
+    }
+    static void Method(int num){
+        if(num<=0){
+            System.out.print(num+" ");
+            return;
+        }
+        System.out.print(num+" ");
+        Method(num-5);
+        System.out.print(num+" ");
+        
+        
+    }
+}

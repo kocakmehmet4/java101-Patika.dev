@@ -1,0 +1,29 @@
+import java.util.Scanner;
+class SortWithArray {
+    public static void main(String[] args) {
+        Scanner input= new Scanner(System.in);
+        System.out.print("Please enter the array size: ");
+        int size=input.nextInt();
+        int [] array= new int[size];
+        int temp;
+        System.out.println("Enter element of array: ");
+        for(int i=0;i<size;i++){
+            System.out.print(i+1+". element: ");
+            array[i]=input.nextInt();
+        }
+        
+        for(int i=0;i<size;i++){
+            for(int j=0;j<size;j++){
+                if(array[j]>array[i]){
+                temp=array[i];
+                array[i]=array[j];
+                array[j]=temp;
+                }
+            }
+            
+        }
+        for(int i=0;i<size;i++){
+            System.out.println(i+1+". element: "+ array[i]);
+        }
+    }
+}

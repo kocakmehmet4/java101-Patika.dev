@@ -1,0 +1,40 @@
+import java.util.Arrays;
+
+public class Main {
+    public static void main(String[] args) {
+        int[] array = {10, 5, 8, 3, 12, 7};
+        int target = 9;
+
+        int closestSmaller = findClosestSmaller(array, target);
+        int closestLarger = findClosestLarger(array, target);
+
+        System.out.println("Closest Smaller: " + closestSmaller);
+        System.out.println("Closest Larger: " + closestLarger);
+    }
+
+    public static int findClosestSmaller(int[] array, int target) {
+        Arrays.sort(array); // Diziyi küçükten büyüğe sıralama
+
+        int closest = Integer.MIN_VALUE;
+        for (int num : array) {
+            if (num < target && num > closest) {
+                closest = num;
+            }
+        }
+
+        return closest;
+    }
+
+    public static int findClosestLarger(int[] array, int target) {
+        Arrays.sort(array); // Diziyi küçükten büyüğe sıralama
+
+        int closest = Integer.MAX_VALUE;
+        for (int num : array) {
+            if (num > target && num < closest) {
+                closest = num;
+            }
+        }
+
+        return closest;
+    }
+}
